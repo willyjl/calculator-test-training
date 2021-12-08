@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  border: 1px solid #2d2d2d;
+  width: 200px;
+  padding: 1em;
+  margin: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+.form-container {
+  margin: .8em 0;
+}
+
+button {
+  background: #1e90ff;
+  color: white;
+  border: 0;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 3px;
+}
