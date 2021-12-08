@@ -1,8 +1,8 @@
-exports.add = (a, b) => {
+const add = (a, b) => {
   return a+b;
 };
 
-exports.multiply = (a, b) => {
+const multiply = (a, b) => {
   return a*b;
 };
 
@@ -12,3 +12,17 @@ exports.validateAndParse = (value) => {
 
   return parseInt(value, 10);
 };
+
+const calculate = (operation, firstNumber, secondNumber) => {
+  switch (operation) {
+    case '*':
+      return multiply(firstNumber, secondNumber);
+  
+    default:
+      return add(firstNumber, secondNumber);
+  }
+};
+
+exports.add = add;
+exports.multiply = multiply;
+exports.calculate = calculate;

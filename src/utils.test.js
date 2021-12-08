@@ -1,4 +1,4 @@
-const { add, multiply, validateAndParse } = require('./utils');
+const { add, multiply, validateAndParse, calculate } = require('./utils');
 
 test('should add two numbers correctly', () => {
   const result = add(2, 3);
@@ -28,4 +28,9 @@ test('should validate and parse undefined correctly', () => {
 
 test('should validate and parse null correctly', () => {
   expect(validateAndParse(null)).toEqual(0);
+});
+
+test('should calculate correctly', () => {
+  expect(calculate('*', 2, 3)).toEqual(6);
+  expect(calculate('+', 7, 9)).toEqual(16);
 });

@@ -1,4 +1,4 @@
-const { add, multiply, validateAndParse } = require('./utils');
+const { validateAndParse, calculate } = require('./utils');
 
 const executeCalculator = (event) => {
   event.preventDefault();
@@ -11,14 +11,5 @@ const executeCalculator = (event) => {
   document.getElementById('resultBox').innerText = `Result is ${result}`;
 };
 
-const calculate = (operation, firstNumber, secondNumber) => {
-  if (operation === '*') {
-    return multiply(firstNumber, secondNumber);
-  } else {
-    return add(firstNumber, secondNumber);
-  }
-};
-
 const calculatorForm = document.getElementById('calculatorForm');
-
 calculatorForm.addEventListener('submit', executeCalculator);
