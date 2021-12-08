@@ -7,6 +7,7 @@ exports.multiply = (a, b) => {
 };
 
 exports.validateAndParse = (value) => {
+  if (typeof value === 'number') return value;
   if (typeof value !== 'string') return 0;
 
   return parseInt(value, 10);
