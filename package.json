@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack ./src/index.js --mode development --watch",
     "dev": "webpack serve --hot --mode development",
-    "test": ""
+    "test": "jest"
   },
   "author": "Willy Jansen",
   "license": "ISC",
